@@ -1,2 +1,2 @@
-# pwa.github.io
+# pwa
 PWA 테스트
