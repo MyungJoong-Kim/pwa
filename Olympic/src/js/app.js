@@ -31,9 +31,16 @@ class App {
       );
       this.visual.animate(this.ctx);
 
+      // 마우스 이벤트  
       window.addEventListener('mousedown', this.onMouseDown.bind(this));
       window.addEventListener('mouseup', this.onMouseUp.bind(this));
       window.addEventListener('mousemove', this.onMouseMove.bind(this));
+
+      // 터치 이벤트
+      window.addEventListener('touchstart', this.onMouseDown.bind(this));
+      window.addEventListener('touchend', this.onMouseUp.bind(this));
+      window.addEventListener('touchmove', this.onMouseMove.bind(this));
+      
       requestAnimationFrame(this.animate.bind(this));
     };
   }
