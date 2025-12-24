@@ -7,13 +7,13 @@ class App {
     this.ctx = this.canvas.getContext('2d');
     document.body.appendChild(this.canvas);
 
-    this.stageWidth = document.body.clientWidth;
-    this.stageHeight = document.body.clientHeight;
+    this.stageWidth = window.innerWidth;;
+    this.stageHeight = window.innerHeight;
 
     this.canvas.width = this.stageWidth;
     this.canvas.height = this.stageHeight;
 
-    this.pixelRatio = window.devicePixelRatio > 1 ? 2 : 1;
+    this.pixelRatio = Math.min(window.devicePixelRatio, 3);
 
     window.addEventListener('resize', this.resize.bind(this));
 
