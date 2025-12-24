@@ -19,7 +19,7 @@ class App {
     this.nightBtn = document.querySelector('.night');
     this.dayBtn = document.querySelector('.day');
 
-    this.day = true;
+    // this.day = true;
 
     this.nightBtn.addEventListener(
       'pointerup',
