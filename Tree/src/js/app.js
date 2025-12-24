@@ -22,11 +22,11 @@ class App {
     this.day = true;
 
     this.nightBtn.addEventListener(
-      'click',
+      'pointerup',
       this.nightBtnHandler.bind(this),
       false
     );
-    this.dayBtn.addEventListener('click', this.dayBtnHandler.bind(this), false);
+    this.dayBtn.addEventListener('pointerup', this.dayBtnHandler.bind(this), false);
   }
 
   nightBtnHandler() {
