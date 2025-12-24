@@ -9,7 +9,7 @@ class App {
     this.pixelRatio = window.devicePixelRatio > 1 ? 2 : 1;
 
     window.addEventListener('resize', this.resize.bind(this), false);
-    window.addEventListener('click', this.click.bind(this), false);
+    window.addEventListener('pointerup', this.click.bind(this), false);
 
     this.resize();
     this.setBtn();
